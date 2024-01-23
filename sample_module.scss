@@ -1,0 +1,104 @@
+@import "../../../assets/styles/variables.scss";
+
+.root {
+  background: $color-black-light;
+  left: 50%;
+  bottom: 0;
+  z-index: 9;
+  width: 100%;
+  height: 58px;
+  position: fixed;
+  padding: 0 18px;
+  max-width: inherit;
+  text-align: center;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  html[data-theme="dark"] & {
+    border: 1px solid var(--darkMediumBackground);
+  }
+
+  &.relative{
+    position: relative;
+  }
+
+  .tab {
+    outline: none;
+    text-decoration: none;
+    padding: 5px 0;
+    font-size: 8px;
+    min-width: 24px;
+    color: #818694;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    svg {
+      width: 29px;
+      height: 23px;
+      object-fit: contain;
+      margin: 0 auto 6px;
+    }
+  }
+
+  .tabName{
+    &.active{
+      color: $color-green-dark-alt;
+    }
+  }
+
+  .totalBets {
+    z-index: 1;
+    width: 75px;
+    height: 58px;
+    font-size: 14px;
+    padding-top: 0;
+    line-height: 1.2;
+    color: $color-white;
+    position: relative;
+    cursor: pointer;
+    background-color: lighten($color-black, 88.63);
+    cursor: pointer;
+
+    html[data-theme="dark"] & {
+      background-color: var(--darkLighterBackground);
+    }
+    &::before {
+      left: 0;
+      top: -9px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      content: "";
+      display: block;
+      position: absolute;
+      border-radius: 1px 1px 4px 4px;
+      background-color: lighten($color-black, 60.78);
+    }
+    strong {
+      display: block;
+      font-size: 10px;
+      font-weight: 400;
+    }
+    cite {
+      width: 14px;
+      height: 14px;
+      display: block;
+      font-size: 10px;
+      line-height: 14px;
+      text-align: center;
+      border-radius: 4px;
+      margin: -2px auto 3px;
+      font-style: normal;
+      background-color: $color-white;
+      color: lighten($color-black, 45.49);
+    }
+    &.active {
+      &::before {
+        background-color: $color-green-dark-alt;
+      }
+    }
+  }
+}

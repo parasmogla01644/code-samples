@@ -1,0 +1,90 @@
+// colors
+$color-white: #fff;
+$color-black: #000;
+$color-black-light: #1a1a1a;
+$text-color-base: #000;
+$color-pink: #e5206f;
+$color-red: #e67575;
+$color-alert: #ffb0b0;
+$color-alert-dark: #ff2c2c;
+$color-red-dark: #e6455a;
+$color-dark: #010c2b;
+$color-darken: #171923;
+$color-dark-medium: #191919;
+$color-dark-alt: #1b1f2b;
+$color-graylight: #c5c8d4;
+$color-gray: #f5f5f5;
+$color-gray1: #f0f0f0;
+$color-gray2: #ccd0dd;
+$color-gray3: #909090;
+$color-gray4: #6b707f;
+$color-gray5: #f3f4f7;
+$color-gray6: #ebedf0;
+$color-gray7: #ebebeb;
+$color-gray-medium2: #717171;
+$color-dark-gray: #575757;
+$color-gray-dark: #2b2d35;
+$color-gray-dark2: #1b1c23;
+$color-gray-dark3: #15161a;
+$color-gray-dark4: #3e3f43;
+$color-gray-dark5: #0c0b06;
+$color-gray-dark6: #15130c;
+$color-gray-dark7: #2b2d34;
+$color-gray-dark8: #5e6061;
+$color-gray-medium: #e0e0e0;
+$color-gray-alt: #f7f8f7;
+$color-gray-text: #d4d7df;
+$color-darkGray-text: #818694;
+$color-border: #707070;
+$color-yellow: #feb500;
+$color-yellow-dark: #d1a108;
+$color-orange: #fd8800;
+$color-light: #d5d8e3;
+$color-light-alt: #bbbeca;
+$color-lighten: #cfd3e0;
+$color-lighten-alt: #7f8594;
+$color-gray-light: #6a7080;
+$color-gray-lighten: #bbbbba;
+$color-blue: #033d88;
+$color-light-blue: #215da8;
+$color-lighten-blue: #1189ff;
+$color-green: #6edba8;
+$color-green-light: #b0ffe3;
+$color-green-dark: #49b271;
+$color-green-dark-alt: #3daf7f;
+$color-info: #b59a00;
+
+// base settings
+$font-size-base: 10px;
+$line-height-base: 1.57;
+$font-family-base: "Arial", sans-serif;
+$font-family-secondary: "Teko", sans-serif;
+$font-family-primary: "Roboto", sans-serif;
+$radius: 4px;
+$box-shadow-inset: inset 0 4px 4px rgba($color-black, 0.25);
+
+// breakpoints
+$mobile-sm: 575px;
+$mobile: 767px;
+$tablet-sm: 991px;
+$tablet: 1024px;
+$desktop: 1199px;
+$desktop-lg: 1366px;
+$desktop-xl: 1599px;
+
+// grid
+$side-gutter: 8px;
+
+// typography
+$font-size-h1: 32px;
+$font-size-h2: 28px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
+$font-size-h5: 18px;
+$font-size-h6: 13px;
+
+// image path
+$imgPath: "../../../assets/images/";
+
+@import "mixins";
+// @import "extends";
